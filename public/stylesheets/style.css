@@ -6530,12 +6530,13 @@ button.close {
     display: none !important;
   }
 }
+/*@second: #efb1af;*/
 /*@third: #be9f91;*/
 h1 {
   color: #947b70;
 }
 h2 {
-  color: #efb1af;
+  color: #e4a9a7;
 }
 h1,
 h2,
@@ -6549,12 +6550,9 @@ h3 {
   margin: 0 0 30px 0;
   font-size: 22px;
 }
-html,
-body,
-.container-fluid,
-.row {
-  height: 100%;
-}
+/*html, body, .container-fluid, .row {
+	height: 100%;
+}*/
 body {
   min-height: 100%;
   font-family: 'Oxygen', sans-serif;
@@ -6581,6 +6579,12 @@ img.portrait {
 }
 #mainMenu ul li {
   display: inline-block;
+}
+ul {
+  list-style-type: none;
+}
+emphasis {
+  color: #e4a9a7;
 }
 nav.menu {
   position: fixed;
@@ -6623,13 +6627,7 @@ nav.menu .bullet {
   border-bottom-color: rgba(0, 0, 0, 0.1);
 }
 nav.menu .bullet-selected {
-  background: #efb1af;
-}
-ul {
-  list-style-type: none;
-}
-emphasis {
-  color: #efb1af;
+  background: #e4a9a7;
 }
 section {
   border-top: 1px solid #f5efef;
@@ -6687,4 +6685,172 @@ section#contact #adressContact table td {
 }
 section#contact #adressContact table ul {
   padding-left: 0;
+}
+.navbar-default {
+  background: #fae2e1;
+  border-color: #f7e0df;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: none;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #be9f91;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #947b70;
+  background: rgba(240, 217, 217, 0.2);
+}
+.navbar-default .navbar-nav > a:hover,
+.navbar-default .navbar-nav > a:focus {
+  color: #947b70;
+  font-weight: bold;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #947b70;
+  background: rgba(240, 217, 217, 0.2);
+}
+#foyeryolandelafue .row {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+#foyeryolandelafue nav#breadcrumb {
+  position: fixed;
+  left: 0;
+  top: 500px;
+  width: 300px;
+}
+#foyeryolandelafue nav#breadcrumb li {
+  padding: 2px 0;
+}
+#foyeryolandelafue nav#breadcrumb li a {
+  margin-left: 10px;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #947b70;
+}
+#foyeryolandelafue nav#breadcrumb li .bullet {
+  float: left;
+  position: relative;
+  top: 7px;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
+  background: #F7F1F1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top-color: rgba(0, 0, 0, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+#foyeryolandelafue nav#breadcrumb li.selected a {
+  font-weight: bold;
+  color: #E4A9A7;
+}
+#foyeryolandelafue nav#breadcrumb li.selected .bullet {
+  background: #e4a9a7;
+}
+#foyeryolandelafue #presentationFoyer {
+  padding-top: 0;
+  margin-bottom: 50px;
+}
+#foyeryolandelafue #presentationFoyer #pageTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#foyeryolandelafue #presentationFoyer #pageTitle img.portrait {
+  display: inline-block;
+  margin: none;
+  border-radius: 200px;
+  width: 90px;
+  height: 90px;
+}
+#foyeryolandelafue #presentationFoyer #pageTitle h1 {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 30px;
+}
+#foyeryolandelafue #presentationFoyer table {
+  margin: auto;
+}
+#foyeryolandelafue #presentationFoyer table td {
+  height: 1px;
+  vertical-align: top;
+}
+#foyeryolandelafue #presentationFoyer table #description {
+  max-width: 500px;
+  margin-left: 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: #be9f91;
+  color: white;
+  height: 100%;
+}
+#foyeryolandelafue #presentationFoyer table #description h1 {
+  margin-top: 0;
+  color: white;
+}
+#foyeryolandelafue #temoignages {
+  background-color: #fae2e1;
+}
+#foyeryolandelafue #temoignages .temoignage {
+  margin: 20px 0;
+}
+#foyeryolandelafue #temoignages .temoignage td {
+  vertical-align: text-top;
+}
+#foyeryolandelafue #temoignages .temoignage .portrait {
+  text-align: center;
+}
+#foyeryolandelafue #temoignages .temoignage .portrait img {
+  display: block;
+}
+#foyeryolandelafue #temoignages .temoignage .temoignage_citation {
+  vertical-align: middle;
+  padding-left: 20px;
+}
+#foyeryolandelafue #temoignages #temoignage_1,
+#foyeryolandelafue #temoignages #temoignage_4 {
+  margin-left: 0;
+}
+#foyeryolandelafue #temoignages #temoignage_2,
+#foyeryolandelafue #temoignages #temoignage_5 {
+  margin-left: 170px;
+}
+#foyeryolandelafue #temoignages #temoignage_3 {
+  margin-left: 340px;
+}
+#foyeryolandelafue #biographie h1 {
+  margin-bottom: 20px;
+}
+#foyeryolandelafue #biographie #yolande_1 {
+  float: left;
+  width: 200px;
+  margin-right: 15px;
+}
+#foyeryolandelafue #biographie #yolande_2 {
+  float: right;
+  width: 200px;
+  margin-left: 15px;
+}
+#foyeryolandelafue #biographie #yolande_3 {
+  float: left;
+  width: 200px;
+  margin-right: 15px;
+}
+#foyeryolandelafue #gallerie {
+  background-color: #fae2e1;
+}
+#foyeryolandelafue #informations #googlemapContact {
+  float: right;
+  margin-left: 20px;
+}
+#foyeryolandelafue #informations #informations_description {
+  margin-top: 20px;
+}
+#foyeryolandelafue #informations #documents {
+  padding-left: 30px;
+}
+#foyeryolandelafue #informations #documents a {
+  color: #407ba5;
 }

@@ -7,13 +7,12 @@ module.exports = function(grunt) {
           paths: ["assets/css"]
         },
         files: {
-          "public/stylesheets/style.css": "public/less/style.less",
-          "public/stylesheets/accueil.css": "public/less/accueil.less"
+          "public/stylesheets/style.css": "public/less/style.less"
         }
       }
     },
     watch: {
-      files: ['public/less/style.less', 'public/less/accueil.less'],
+      files: ['public/less/style.less', 'public/less/fondation.less', 'public/less/foyer.less', 'public/less/common.less'],
       tasks: ['less']
     }
   });
