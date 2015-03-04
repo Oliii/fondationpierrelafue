@@ -15,4 +15,5 @@ app.get('/foyeryolandelafue', function(req, res) {
 	res.render('foyer');
 });
 
-var server = app.listen(5000);
+var port = process.env.PORT || 5000;
+var server = app.listen(port);
