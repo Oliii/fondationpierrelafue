@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	
+	$("#breadcrumb").css('top', $(window).height()/2);
+
 	$("#breadcrumb a").on("click", function(e) {
 		var $link = $(e.target);
 		var id = $link.data("target");
