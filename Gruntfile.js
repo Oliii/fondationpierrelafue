@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['public/less/style.less', 'public/less/fondation.less', 'public/less/foyer.less', 'public/less/common.less'],
+      files: ['public/less/style.less', 'public/less/fondation.less', 'public/less/foyer.less', 'public/less/common.less', 'public/less/presentation.less'],
       tasks: ['less']
     }
   });
