@@ -12,4 +12,10 @@ $(document).ready(function() {
 	    $("#breadcrumb li.selected").removeClass("selected");
 	    $("a[data-target='" + id + "']").closest("li").addClass("selected");
 	});
+
+	$("#foyerGallery").justifiedGallery({
+    rowHeight : 200,
+    lastRow : 'nojustify',
+    margins : 3
+	});
 });

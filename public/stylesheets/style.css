@@ -6673,6 +6673,7 @@ nav.menu {
   text-align: center;
   background-color: #fff6f6;
   background-color: #F8F5F9;
+  background-color: #FAFAFA;
   min-height: 100%;
   height: 100%;
   box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1);
@@ -6715,6 +6716,19 @@ nav.menu .bullet {
 nav.menu .bullet-selected {
   background: #e4a9a7;
 }
+#donsModal .modal-dialog {
+  width: 750px;
+}
+#donsModal ul {
+  font-weight: 300;
+  list-style-type: disc;
+}
+#donsModal .modal-footer {
+  text-align: left;
+}
+#donsModal .modal-footer a {
+  color: #407ba5;
+}
 section {
   padding-bottom: 80px;
 }
@@ -6722,7 +6736,7 @@ section h2 {
   padding-bottom: 20px;
 }
 section#pierreLafueIntro {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 section#pierreLafueIntro p {
   font-style: italic;
@@ -6731,13 +6745,22 @@ section#pierreLafueIntro p {
   text-align: center;
 }
 section#historique {
-  border-top: 1px solid #ffdddd;
+  padding-top: 20px;
+  background-color: #be9f91;
+  color: #F8F8F8;
+}
+section#historique h1 {
+  color: #F8F8F8;
+  margin-bottom: 40px;
 }
 section#historique img {
   float: right;
-  margin-left: 10px;
-  opacity: 0.9;
-  width: 250px;
+  padding-top: 50px;
+  padding-left: 30px;
+  width: 330px;
+}
+section#prix {
+  padding-top: 20px;
 }
 section#prix img {
   height: 300px;
@@ -6812,7 +6835,8 @@ section#contact #adressContact table ul {
   background: #e4a9a7;
 }
 #foyeryolandelafue #presentationFoyer {
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 #foyeryolandelafue #presentationFoyer #pageTitle {
   margin-top: 20px;
@@ -6879,26 +6903,14 @@ section#contact #adressContact table ul {
 #foyeryolandelafue #temoignages #temoignage_3 {
   margin-left: 340px;
 }
-#foyeryolandelafue #biographie h1 {
-  margin-bottom: 20px;
-}
-#foyeryolandelafue #biographie #yolande_1 {
-  float: left;
-  width: 200px;
-  margin-right: 15px;
-}
-#foyeryolandelafue #biographie #yolande_2 {
-  float: right;
-  width: 200px;
-  margin-left: 15px;
-}
-#foyeryolandelafue #biographie #yolande_3 {
-  float: left;
-  width: 200px;
-  margin-right: 15px;
-}
 #foyeryolandelafue #gallerie {
   background-color: #fae2e1;
+}
+#foyeryolandelafue #gallerie #foyerVideo {
+  text-align: center;
+}
+#foyeryolandelafue #gallerie #foyerVideo a {
+  color: #407ba5;
 }
 #foyeryolandelafue #informations #googlemapContact {
   float: right;
@@ -6920,28 +6932,65 @@ section#contact #adressContact table ul {
   width: 50%;
   height: 100%;
   background-color: #fff6f6;
-  z-index: 1;
+  background-color: #fae2e1;
+  z-index: -1;
 }
 #presentation_couple {
-  position: absolute;
-  top: 150px;
-  width: 100%;
-  z-index: 10;
+  margin-top: 200px;
+  margin-bottom: 180px;
   text-align: center;
 }
 #presentation_couple img {
-  width: 500px;
+  max-width: 450px;
   -ms-transform: rotate(180deg);
   /* IE 9 */
   -webkit-transform: rotate(180deg);
   /* Chrome, Safari, Opera */
   transform: rotate(180deg);
 }
+#presentation_couple h2 {
+  margin-bottom: 40px;
+}
+#presentation_couple .fondation h2 {
+  color: #947b70;
+}
+#presentation_couple .col-sm-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
 #pierre_lafue_biographie {
-  margin-top: 500px;
+  position: relative;
   z-index: 10;
-  text-align: right;
+  background-color: #be9f91;
+  color: #F8F8F8;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+#pierre_lafue_biographie h1 {
+  color: #F8F8F8;
+}
+#pierre_lafue_biographie img {
+  max-width: 330px;
+  float: left;
+  padding-right: 30px;
 }
 #yolande_lafue_biographie {
-  margin-top: 500px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: #fff6f6;
+  background-color: #FAFAFA;
+}
+#yolande_lafue_biographie h1 {
+  margin-bottom: 40px;
+}
+#yolande_lafue_biographie #yolande_1 {
+  float: left;
+  max-width: 300px;
+  padding-right: 30px;
+}
+#yolande_lafue_biographie #yolande_2 {
+  float: right;
+  width: 300px;
+  padding-left: 30px;
 }

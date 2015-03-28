@@ -15,5 +15,8 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.4"
+  },
+  "devDependencies": {
+    "Justified-Gallery": "~3.5.4"
   }
 }
