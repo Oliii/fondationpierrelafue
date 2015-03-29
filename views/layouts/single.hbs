@@ -11,6 +11,8 @@
 
 	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	  	<script src="/js/angular-sanitize.js"></script>
 	  	<script type="text/javascript" src="/js/scripts.js"></script>
 	  	<script src="/js/lightbox.min.js"></script>
 	  	<script src="/js/justifiedGallery.min.js"></script>
@@ -20,9 +22,9 @@
 
 		<nav id="navbar-menu">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/presentation">Pierre et Yolande Lafue</a></li>
-				<li><a href="/">La Fondation<span class="sr-only">(current)</span></a></li>
-				<li class="active"><a href="/foyeryolandelafue">Le foyer</a></li>
+				<li><a href="/">Pierre et Yolande Lafue</a></li>
+				<li><a href="/fondation">La Fondation<span class="sr-only">(current)</span></a></li>
+				<li><a href="/foyeryolandelafue">Le foyer</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#donsModal">Dons</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#contactModal">Contacts</a></li>
 			</ul>
@@ -40,7 +42,9 @@
 					<div class="modal-body">
 				
 						<div id="contact">
-
+						<p id="googlemapContact">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d164.08207508533565!2d2.327525459806443!3d48.85223770457691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d123c6a3d7%3A0xb1c2a7cff9d2f968!2s21A+Rue+du+Cherche-Midi%2C+75006+Paris!5e0!3m2!1sfr!2sfr!4v1424020007081" width="300" height="225" frameborder="0" style="border:0"></iframe>
+							</p>
 							<div id="adressContact">
 								<table>
 									<tr>
@@ -62,16 +66,13 @@
 									</tr>
 								</table>
 							</div>
-							<p id="googlemapContact">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d164.08207508533565!2d2.327525459806443!3d48.85223770457691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d123c6a3d7%3A0xb1c2a7cff9d2f968!2s21A+Rue+du+Cherche-Midi%2C+75006+Paris!5e0!3m2!1sfr!2sfr!4v1424020007081" width="300" height="225" frameborder="0" style="border:0"></iframe>
-							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="modal" id="donsModal" tabindex="-1" role="dialog" aria-labelledby="donsModalLabel" aria-hidden="true">
+		<div class="modal fade" id="donsModal" tabindex="-1" role="dialog" aria-labelledby="donsModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 				<div class="modal-header">

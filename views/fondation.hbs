@@ -1,20 +1,20 @@
-
+<script type="text/javascript" src="/js/script_fondation.js"></script>
 
 <nav class="col-sm-2 menu" id="breadcrumbs">
 	<div id="navTitle">
 		<img src="images/pierre_lafue.png" id="pierreLafueProtrait" class="portrait">
 		<h1>Fondation Pierre Lafue</h1>
 	</div>
-	<ul>
-		<li class="selected"><div class="bullet"></div><a href="javascript:void(0)" data-target="#presentationFoyer">Historique et buts</a></li>
-		<li><div class="bullet"></div><a href="javascript:void(0)" data-target="#temoignages">Les prix</a></li>
-		<li><div class="bullet"></div><a href="javascript:void(0)" data-target="#biographie">Dons</a></li>
+	<ul class="style-type-none">
+		<li class="selected"><div class="bullet"></div><a href="javascript:void(0)" data-target="pierreLafueIntro">Historique et buts</a></li>
+		<li><div class="bullet"></div><a href="javascript:void(0)" data-target="prix">Les prix</a></li>
+		<li><div class="bullet"></div><a href="javascript:void(0)" data-target="jury">Le jury</a></li>
 	</ul>
 </nav>
 
 <div class="container-fluid">
 
-	<section class="row" id="pierreLafueIntro">
+	<section class="row page-section" id="pierreLafueIntro">
 		<div class="col-sm-8 col-sm-offset-3">	
 			<p id="pierreLafueCitation">"Le Journal que j'ai tenu pendant plus de 40 ans, ne forme pas un récit continu, incorporé, jour après jour, à la trame de ma vie personnelle. Il ne relate que l’essentiel et néglige volontairement l’accessoire."</p>
 		</div>
@@ -38,22 +38,74 @@
 		</div>
 	</section>
 
-	<section class="row" id="prix">
+	<section class="row page-section" id="prix">
 		<div class="col-sm-8 col-sm-offset-3">
-			<h1>Les prix</h1>
+			<h1 class="color-second">Les prix</h1>
 			<p>
 				Le 38ème prix de la Fondation Pierre LAFUE a été décerné à <b>Jean-Noël Jeanneney</b> pour l'ensemble de son œuvre et plus particulièrement pour son ouvrage paru aux éditions du Seuil : <emphasis>"La Grande Guerre, si loin, si proche. Réflexions sur un Centenaire."</emphasis>
 			</p>
-			<div id="prixGalery">
-				<img src="images/Livre_prix2014.jpg">
-				<img src="images/bruno_mazodier_1412.jpg">
-			</div>				
+			<div id="prixGalery" class="row">
+				<div class="col-sm-4" style="padding-right: 0; padding-left: 0;">
+					<img src="images/bruno_mazodier_1412.jpg">
+					<p>Cérémonie de remise du prix le 1er octobre 2014</p>
+				</div>
+				<div class="col-sm-5" style="padding-right: 0;">
+					<img src="images/bruno_mazodier.jpg">
+					<p>Allocution de Mr.Jean-Noël Jeanneney</p>
+				</div>
+				<div class="col-sm-3" style="padding-right: 0; padding-left: 0;">
+					<img src="images/Livre_prix2014.jpg">
+				</div>
+			</div>
+			<!-- <button type="button" class="btn" id="antPrixBtn">Voir les prix antérieurs</button>				 -->
 		</div>
 	</section>
 
-	<section class="row" id="jury">
+	<section class="row" id="prixanterieurs" ng-app="prixanterieurs" >
+		<div class="col-sm-8 col-sm-offset-3" ng-controller="mainCtrl as ctrl">
+			<h1 class="color-second">Les prix antérieurs</h1>
+			
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#prix_2013" aria-controls="prix_2013" role="tab" data-toggle="tab" ng-click="ctrl.changeYear(2013)">2013</a></li>
+				<li role="presentation">
+					<a href="#prix_2012" aria-controls="prix_2012" role="tab" data-toggle="tab" ng-click="ctrl.changeYear(2012)">2012</a></li>
+				<li role="presentation">
+					<a href="#prix_2011" aria-controls="prix_2011" role="tab" data-toggle="tab" ng-click="ctrl.changeYear(2011)">2011</a></li>
+				<li role="presentation">
+					<a href="#prix_2010" aria-controls="prix_2010" role="tab" data-toggle="tab" ng-click="ctrl.changeYear(2010)">2010</a></li>
+			</ul>			
+		
+
+
+
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="prix_2013">
+					<p ng-bind-html="ctrl.prix.intro"></p>
+
+					<div class="prixGallerie">
+						<a ng-repeat="img in ctrl.prix.photos" ng-href="[[ img ]]">
+							<img ng-src="[[ img ]]" />
+						</a>
+					</div>
+
+					<div ng-if="ctrl.prix.ceremonie.photos.length > 0">
+						<h3>Cérémonie de remise du prix</h3>
+						<p ng-bind-html="ctrl.prix.ceremonie.text"></p>
+						<div  class="prixGallerie">
+							<a ng-repeat="img in ctrl.prix.ceremonie.photos" ng-href="[[ img ]]">
+								<img ng-src="[[ img ]]"  />
+							</a>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="row page-section" id="jury">
 		<div class="col-sm-8 col-sm-offset-3">
-			<h1>Jury</h1>
+			<h1 class="color-second">Le jury</h1>
  
 			<p>Chaque année, conformément à l’article 1 er des statuts, un jury constitué par la Fondation Pierre LAFUE décerne le prix LAFUE, qui récompense  soit un ouvrage de langue française d’inspiration historique, soit l’ensemble d’une œuvre.</p>
  

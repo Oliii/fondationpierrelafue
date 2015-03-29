@@ -34,6 +34,10 @@ p {
 	font-weight: 300;
 }
 
+a {
+	color: #407ba5;
+}
+
 .navbar {
 	margin-bottom: 0;
 }
@@ -66,11 +70,25 @@ img.portrait {
 
 ul
 {
-    list-style-type: none;
+	&.style-type-none {
+    	list-style-type: none;
+	}
+
+    li {
+    	font-weight: 300;
+    }
 }
 
 emphasis {
 	color: @second;	
+}
+
+.color-second {
+	color: @second;
+}
+
+.color-third {
+	color: @third;
 }
 
 
@@ -93,7 +111,7 @@ emphasis {
 			color: @third;
 		}
 
-		& > li.active > a:hover, & > li > a:hover, & > li > a:focus  {
+		& > li.active > a, & > li > a:hover, & > li > a:focus  {
 			color: @second;
 			font-weight: 500;
 			background: none;
@@ -101,7 +119,6 @@ emphasis {
 		}
 	}
 }
-
 
 .navbar-default {
 	
@@ -212,8 +229,60 @@ nav.menu {
 	}
 }
 
-#contact {
-	//display: none;
+#breadcrumbs {
+
+	li {
+
+		.bullet {
+			top: 7px;
+			border-radius: 30px;
+			width: 15px;
+			height: 15px;	
+			background: #F7F1F1;
+			border: 1px solid rgba(0,0,0,0.2);
+			border-top-color: rgba(0,0,0,0.3);
+			border-bottom-color: rgba(0,0,0,0.1);
+
+		}
+
+		&.selected {
+
+			a {
+				//font-weight: bold;
+				color: #E4A9A7;
+			}
+			
+			.bullet {
+				background: @second;
+			}
+		}
+	}
+}
+
+#contactModal {
+	.modal-dialog {
+		width: 750px;
+
+		.modal-content {
+			height: 350px;
+		}
+
+		#googlemapContact {
+			float: right;
+		}
+
+		table {
+
+			th {
+				padding: 5px 30px 5px 0;
+			}
+
+			ul {
+				list-style-type: none;
+				padding-left: 0;
+			}
+		}
+	}
 }
 
 #donsModal {

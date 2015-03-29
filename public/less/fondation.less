@@ -49,41 +49,34 @@ section {
 			margin-top: 20px;
 			text-align: center;
 		}
-	}
 
-	&#biographie{
-		img {
-			float: right;
-			margin-left: 10px;
-			opacity: 0.9;
-			width: 250px;
+		#antPrixBtn {
+			color: #F8F8F8;
+  			background-color: @marron;
+  			border-color: #F8F8F8;
 		}
 	}
 
-	&#contact {
-		#googlemapContact, #adressContact {
-			display: inline-block;
-			vertical-align: top;
-		}
+	&#prixanterieurs {
+		.tab-content {
+			margin-top: 20px;
 
-		#adressContact {
-			margin-right: 50px;
-
-			table {
-				th, td {
-					vertical-align: top;
-					padding: 10px;
-					border-bottom: 1px solid darken(@bgColor, 2%);
-				}
-
-				td {
-					padding-left: 30px;
-				}
-
-				ul {
-					padding-left: 0;
-				}
+			.prixGallerie img {
+				height: 250px; 
+				padding-right: 20px; 
+				margin-bottom:20px;
 			}
+		}
+	}
+
+	&#jury {
+		padding-top: 20px;
+		background-color: @marron;
+		color: #F8F8F8;
+
+		h1 {
+			color: #F8F8F8;
+			margin-bottom: 40px;
 		}
 	}
 }

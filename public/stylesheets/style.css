@@ -6580,6 +6580,9 @@ body {
 p {
   font-weight: 300;
 }
+a {
+  color: #407ba5;
+}
 .navbar {
   margin-bottom: 0;
 }
@@ -6602,11 +6605,20 @@ img.portrait {
 #mainMenu ul li {
   display: inline-block;
 }
-ul {
+ul.style-type-none {
   list-style-type: none;
+}
+ul li {
+  font-weight: 300;
 }
 emphasis {
   color: #e4a9a7;
+}
+.color-second {
+  color: #e4a9a7;
+}
+.color-third {
+  color: #947b70;
 }
 #navbar-menu {
   position: absolute;
@@ -6622,7 +6634,7 @@ emphasis {
   font-weight: 300;
   color: #947b70;
 }
-#navbar-menu ul > li.active > a:hover,
+#navbar-menu ul > li.active > a,
 #navbar-menu ul > li > a:hover,
 #navbar-menu ul > li > a:focus {
   color: #e4a9a7;
@@ -6716,6 +6728,38 @@ nav.menu .bullet {
 nav.menu .bullet-selected {
   background: #e4a9a7;
 }
+#breadcrumbs li .bullet {
+  top: 7px;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
+  background: #F7F1F1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top-color: rgba(0, 0, 0, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+#breadcrumbs li.selected a {
+  color: #E4A9A7;
+}
+#breadcrumbs li.selected .bullet {
+  background: #e4a9a7;
+}
+#contactModal .modal-dialog {
+  width: 750px;
+}
+#contactModal .modal-dialog .modal-content {
+  height: 350px;
+}
+#contactModal .modal-dialog #googlemapContact {
+  float: right;
+}
+#contactModal .modal-dialog table th {
+  padding: 5px 30px 5px 0;
+}
+#contactModal .modal-dialog table ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 #donsModal .modal-dialog {
   width: 750px;
 }
@@ -6770,73 +6814,34 @@ section#prix #prixGalery {
   margin-top: 20px;
   text-align: center;
 }
-section#biographie img {
-  float: right;
-  margin-left: 10px;
-  opacity: 0.9;
-  width: 250px;
+section#prix #antPrixBtn {
+  color: #F8F8F8;
+  background-color: #be9f91;
+  border-color: #F8F8F8;
 }
-section#contact #googlemapContact,
-section#contact #adressContact {
-  display: inline-block;
-  vertical-align: top;
+section#prixanterieurs .tab-content {
+  margin-top: 20px;
 }
-section#contact #adressContact {
-  margin-right: 50px;
+section#prixanterieurs .tab-content .prixGallerie img {
+  height: 250px;
+  padding-right: 20px;
+  margin-bottom: 20px;
 }
-section#contact #adressContact table th,
-section#contact #adressContact table td {
-  vertical-align: top;
-  padding: 10px;
-  border-bottom: 1px solid #ffecec;
+section#jury {
+  padding-top: 20px;
+  background-color: #be9f91;
+  color: #F8F8F8;
 }
-section#contact #adressContact table td {
-  padding-left: 30px;
-}
-section#contact #adressContact table ul {
-  padding-left: 0;
+section#jury h1 {
+  color: #F8F8F8;
+  margin-bottom: 40px;
 }
 #foyeryolandelafue .row {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-#foyeryolandelafue nav#breadcrumb {
-  position: fixed;
-  left: 0;
-  top: 500px;
-  width: 300px;
-}
-#foyeryolandelafue nav#breadcrumb li {
-  padding: 2px 0;
-}
-#foyeryolandelafue nav#breadcrumb li a {
-  margin-left: 10px;
-  vertical-align: middle;
-  white-space: nowrap;
-  color: #947b70;
-}
-#foyeryolandelafue nav#breadcrumb li .bullet {
-  float: left;
-  position: relative;
-  top: 7px;
-  border-radius: 30px;
-  width: 15px;
-  height: 15px;
-  background: #F7F1F1;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.3);
-  border-bottom-color: rgba(0, 0, 0, 0.1);
-}
-#foyeryolandelafue nav#breadcrumb li.selected a {
-  font-weight: bold;
-  color: #E4A9A7;
-}
-#foyeryolandelafue nav#breadcrumb li.selected .bullet {
-  background: #e4a9a7;
-}
 #foyeryolandelafue #presentationFoyer {
   margin-top: 100px;
-  margin-bottom: 30px;
 }
 #foyeryolandelafue #presentationFoyer #pageTitle {
   margin-top: 20px;
@@ -6931,13 +6936,13 @@ section#contact #adressContact table ul {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #fff6f6;
-  background-color: #fae2e1;
   z-index: -1;
 }
 #presentation_couple {
-  margin-top: 200px;
-  margin-bottom: 180px;
+  background-color: #fae2e1;
+  margin-top: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
 }
 #presentation_couple img {
@@ -6950,9 +6955,6 @@ section#contact #adressContact table ul {
 }
 #presentation_couple h2 {
   margin-bottom: 40px;
-}
-#presentation_couple .fondation h2 {
-  color: #947b70;
 }
 #presentation_couple .col-sm-3 {
   padding-left: 0;
@@ -6975,6 +6977,17 @@ section#contact #adressContact table ul {
   float: left;
   padding-right: 30px;
 }
+#pierre_lafue_biographie button#biblioBtn {
+  margin-top: 30px;
+  color: #947b70;
+  background-color: white;
+  border-color: #F8F8F8;
+}
+#pierre_lafue_biographie button#biblioBtn:hover {
+  color: #F8F8F8;
+  background-color: #be9f91;
+  border-color: #F8F8F8;
+}
 #yolande_lafue_biographie {
   padding-top: 20px;
   padding-bottom: 50px;
@@ -6986,11 +6999,19 @@ section#contact #adressContact table ul {
 }
 #yolande_lafue_biographie #yolande_1 {
   float: left;
-  max-width: 300px;
+  max-width: 330px;
   padding-right: 30px;
 }
 #yolande_lafue_biographie #yolande_2 {
   float: right;
   width: 300px;
   padding-left: 30px;
+}
+#biblioModal .modal-dialog {
+  width: auto;
+  max-width: 860px;
+}
+#biblioModal .modal-dialog .tab-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
