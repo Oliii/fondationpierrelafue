@@ -36,7 +36,7 @@ function onScroll(event){
     //bottom of the page
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         $("#breadcrumbs li.selected").removeClass("selected");
-        $("#breadcrumbs a[data-target='jury']").closest("li").addClass("selected");
+        $("#breadcrumbs a[data-target='manifestations']").closest("li").addClass("selected");
         return;
     }
 

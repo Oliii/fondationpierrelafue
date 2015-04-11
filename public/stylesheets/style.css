@@ -6551,7 +6551,7 @@ button.close {
 /*@second: #efb1af;*/
 /*@third: #be9f91;*/
 h1 {
-  color: #947b70;
+  color: #966b58;
   margin-bottom: 20px;
 }
 h2 {
@@ -6618,7 +6618,7 @@ emphasis {
   color: #e4a9a7;
 }
 .color-third {
-  color: #947b70;
+  color: #966b58;
 }
 #navbar-menu {
   position: absolute;
@@ -6632,7 +6632,7 @@ emphasis {
 #navbar-menu ul > li > a {
   font-size: 16px;
   font-weight: 300;
-  color: #947b70;
+  color: #966b58;
 }
 #navbar-menu ul > li.active > a,
 #navbar-menu ul > li > a:hover,
@@ -6836,6 +6836,9 @@ section#jury h1 {
   color: #F8F8F8;
   margin-bottom: 40px;
 }
+section#manifestations {
+  padding-top: 20px;
+}
 #foyeryolandelafue .row {
   padding-top: 30px;
   padding-bottom: 50px;
@@ -6893,6 +6896,11 @@ section#jury h1 {
 #foyeryolandelafue #temoignages .temoignage .portrait img {
   display: block;
 }
+#foyeryolandelafue #temoignages .temoignage .portrait span {
+  display: block;
+  padding-top: 4px;
+  white-space: nowrap;
+}
 #foyeryolandelafue #temoignages .temoignage .temoignage_citation {
   vertical-align: middle;
   padding-left: 20px;
@@ -6939,14 +6947,15 @@ section#jury h1 {
   z-index: -1;
 }
 #presentation_couple {
-  background-color: #fae2e1;
+  background-color: #F5F5F5;
   margin-top: 120px;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
 }
 #presentation_couple img {
-  max-width: 450px;
+  max-width: 100%;
+  max-height: 350px;
   -ms-transform: rotate(180deg);
   /* IE 9 */
   -webkit-transform: rotate(180deg);
@@ -6992,7 +7001,6 @@ section#jury h1 {
   padding-top: 20px;
   padding-bottom: 50px;
   background-color: #fff6f6;
-  background-color: #FAFAFA;
 }
 #yolande_lafue_biographie h1 {
   margin-bottom: 40px;
